@@ -16,6 +16,10 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 
 ## :hammer: Tech stack
 
+<img width="50px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Logo-ubuntu_cof-orange-hex.svg/1200px-Logo-ubuntu_cof-orange-hex.svg.png">
+
+<img wigth="50px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/544px-Vimlogo.svg.png">
+
 <img width="45px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png">
 
 ## :floppy_disk: Prototype for the main _printf() function
@@ -86,7 +90,7 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 	</ul>
 </details>
 
-## :bar_chart: Flowcharts
+## :bookmark_tabs: Flowcharts
 
 ![Image](https://github.com/Pandolowitz/holbertonschool-printf/blob/master/resources/flowchart.png?raw=true)
 
@@ -111,7 +115,7 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 |     %i    |    print an integer number     |
 |     %d    |     print a decimal number     |
 
-## Example
+## :computer: Example
 
 **Our own test program code (main.c):**
 

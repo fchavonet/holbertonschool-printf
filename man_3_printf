@@ -1,0 +1,84 @@
+.TH _PRINTF 1 "2023, July" "version 1.0" "User Commands"
+
+.SH NAME
+\fB_printf\fP \- print formatted data to the standard output.
+
+.SH SYNOPSIS
+.B int _printf(const char *format, ...);
+
+.SH DESCRIPTION
+The \fB_printf()\fP function prints formatted data to the standard output. It parses the format string and processes each conversion specifier by calling the appropriate function to print the corresponding data type. Additional arguments after \fBformat\fP are retrieved using \fBva_list\fP and \fBva_start\fP to access the variable arguments.
+
+.SH RETURN VALUE
+On success, \fB _printf()\fP returns the number of characters printed (the total length of the string). If format is NULL or only contains a single '%', the function returns -1.
+
+.SH INCLUDE
+\fB#include <stdarg.h>\fP
+.nf
+\fB#include "main.h"\fP
+.si
+
+.SH FORMAT SPECIFIERS
+The following format specifiers are supported:
+
+.TP
+\fB%%\fR
+Prints a literal '%' character.
+
+.TP
+\fB%c\fR
+Prints a single character.
+
+.TP
+\fB%s\fR
+Prints a null\-terminated string.
+
+.TP
+\fB%i\fR
+Prints an integer number.
+
+.TP
+\fB%d\fR
+Prints a decimal number.
+
+.SH EXAMPLES
+The following examples demonstrate the usage of \fB_printf()\fR:
+
+.TP
+.B _printf("The number is: %d", 42);
+Prints "The number is: 42".
+
+.TP
+.B _printf("%c", 'A');
+Prints "A".
+
+.TP
+.B _printf("The %s is a lie!", cake);
+Prints "The cake is a lie!".
+
+.TP
+.B _printf("%%");
+Prints "%".
+
+.SH NOTES
+This \fB_printf()\fP function is a simplified version of the standard \fBC\fP library function.
+.br
+It lacks some error handling and does not support all the formating capabilities of the standard \fBprintf()\fP function.
+.br
+It covers the basic usage for the mentionned specifiers.
+
+.SH AUTHORS
+Written by \fBFabien Chavonet\fP and \fBSaadi Khemchane\fP.
+
+.SH REPORTING BUGS
+Please report any bugs or issues to \fIfabien.chavonet@holbertonstudents.com\fR.
+
+.SH COPYRIGHT
+.nf
+Copyright (C) 2023, Fabien Chavonet.
+This  is  free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+.si
+
+.SH SEE ALSO
+printf(3)
