@@ -29,8 +29,60 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 ## :floppy_disk: Compilation command
 `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c`
 
-## :bar_chart: Flowcharts
+## :mortar_board: Instructions
 
+**Mandatory tasks**
+
+<details>
+	<summary>
+		<b>Task 0. (I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life)</b>
+	</summary>
+	<ul>
+		<li>Returns: the number of characters printed.
+		<br>
+(excluding the null byte used to end output to strings).</li>
+		<li>write output to stdout, the standard output stream.</li>
+		<li>format is a character string. The format string is composed of zero or more directives. See man 3 printf for more detail. You need to handle the following conversion specifiers:</li>
+		<ul>
+			<li>c</li>
+			<li>s</li>
+			<li>%</li>
+		</ul>
+		<li>You don’t have to reproduce the buffer handling of the C library printf function.</li>
+		<li>You don’t have to handle the flag characters.</li>
+		<li>You don’t have to handle field width.</li>
+		<li>You don’t have to handle precision.</li>
+		<li>You don’t have to handle the length modifie.</li>
+	</ul>
+</details>
+
+<details>
+	<summary>
+		<b>Task 1. (Education is when you read the fine print. Experience is what you get if you don't)</b>
+	</summary>
+	<ul>
+		<li>Handle the following conversion specifiers:</li>
+		<ul>
+			<li>d</li>
+			<li>i</li>
+		</ul>
+	<li>You don’t have to handle the flag characters.</li>
+	<li>You don’t have to handle field width.</li>
+	<li>You don’t have to handle precision.</li>
+	<li>You don’t have to handle the length modifiers.</li>
+	</ul>
+</details>
+
+<details>
+	<summary>
+		<b>Task 2. (Just because it's in print doesn't mean it's the gospel)</b>
+	</summary>
+	<ul>
+		<li>Create a man page for your function.</li>
+	</ul>
+</details>
+
+## :bar_chart: Flowcharts
 
 ![Image](https://github.com/Pandolowitz/holbertonschool-printf/blob/master/resources/flowchart.png?raw=true)
 
