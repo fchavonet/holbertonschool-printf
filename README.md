@@ -16,7 +16,7 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 
 ## :hammer: Tech stack
 
-<img width="50px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png">
+<img width="45px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png">
 
 ## :floppy_disk: Prototype for the main _printf() function
 `int _printf(const char *format, ...);`
