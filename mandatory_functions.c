@@ -73,3 +73,47 @@ int print_percentage(va_list arguments)
 
 	return (1);
 }
+
+int print_number(va_list arguments)
+{
+	long int number = va_arg(arguments, int);
+
+	long int absolute_number = 0;
+	long int temp_number = absolute_number;
+	long int digit_position = 1;
+
+	int lenght = 0;
+
+	/* negative number processing */
+	if (number < 0)
+	{
+		absolute_number = (number * -1);
+		_putchar('-');
+
+		lenght++;
+	}
+	else
+	{
+		absolute_number = number;
+	}
+
+	temp_number = absolute_number;
+
+	/* find the position of the leftmost digit */
+	while (temp_number > 9)
+	{
+		temp_number = temp_number / 10;
+		digit_position = digit_position * 10;
+	}
+
+	/* print each digit from left to right */
+	while (digit_position >= 1)
+	{
+		_putchar(((absolute_number / digit_position) % 10) + '0');
+		digit_position = digit_position / 10;
+
+		lenght++;
+	}
+
+	return (lenght);
+}
