@@ -30,15 +30,25 @@ int _printf(const char *format, ...)
 		return (-1);
 	}
 
+	/* loop through the format string to process each character */
 	while (format[index_format] != '\0')
 	{
 		if (format[index_format] == '%')
 		{
+			/**
+			 * if a '%' is found,
+			 * call specifiers_handler to process the conversion specifier
+			 */
 			total_length += specifiers_handler(format[index_format + 1], arguments);
+			/* move to the next character after the conversion specifier */
 			index_format += 2;
 		}
 		else
 		{
+			/**
+			 * if it's not a '%',
+			 * directly print the character and update the total_length
+			 */
 			total_length += _putchar(format[index_format]);
 			index_format++;
 		}

@@ -12,6 +12,10 @@ int specifiers_handler(const char specifier, va_list arguments)
 {
 	int index_array = 0;
 
+	/**
+	 * array of format_handler structures mapping specifiers
+	 * to their print functions
+	 */
 	format_handler array[] = {
 		{'c', print_character},
 		{'s', print_string},
@@ -23,6 +27,10 @@ int specifiers_handler(const char specifier, va_list arguments)
 
 	while (array[index_array].specifier != '\0')
 	{
+		/**
+		 * if the specifier matches an entry in the array,
+		 * call the associated print function
+		 */
 		if (specifier == array[index_array].specifier)
 		{
 			return (array[index_array].function(arguments));
@@ -31,6 +39,10 @@ int specifiers_handler(const char specifier, va_list arguments)
 		index_array++;
 	}
 
+	/**
+	 * if no matching specifier found,
+	 * print '%' followed by the unrecognized specifier
+	 */
 	_putchar('%');
 	_putchar(specifier);
 
