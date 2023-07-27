@@ -33,7 +33,7 @@ int print_character(va_list arguments)
  * @arguments: a va_list containing the argument to be printed (a char pointer)
  *
  * Return: the number of characters printed (the length of the string)
- */ 
+ */
 int print_string(va_list arguments)
 {
 	char *string = va_arg(arguments, char *);
