@@ -74,6 +74,13 @@ int print_percentage(va_list arguments)
 	return (1);
 }
 
+/**
+ * print_number - print a number (integer) to the standard output
+ *
+ * @arguments: a va_list containing the integer to be printed
+ *
+ * Return: the number of characters printed
+ */
 int print_number(va_list arguments)
 {
 	long int number = va_arg(arguments, int);
