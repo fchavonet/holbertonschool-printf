@@ -12,6 +12,13 @@ int print_character(va_list arguments);
 int print_string(va_list arguments);
 int print_percentage(va_list arguments);
 
+/**
+ * struct format_handler_structure - structure to handle format
+ *                                   specifiers and corresponding functions
+ *
+ * @specifier: the format specifier character
+ * @function: a function pointer to the corresponding data processing function
+ */
 typedef struct format_handler_structure
 {
 	char specifier;
