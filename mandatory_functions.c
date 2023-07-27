@@ -34,3 +34,12 @@ int print_string(va_list arguments)
 
 	return (length);
 }
+
+int print_percentage(va_list arguments)
+{
+	/* silence the unused parameter warning */
+	(void)arguments;
+	_putchar('%');
+
+	return (1);
+}
