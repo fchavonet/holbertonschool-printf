@@ -1,9 +1,9 @@
 # <p align="center">C - printf</p>
 
 <p align="center">
-<img src="https://apply.holbertonschool.com/holberton-logo.png">
-<br>
-<img src="https://readme-typing-svg.herokuapp.com?font=Open+Sans&weight=900&pause=1000&color=1D5ABD&center=true&vCenter=true&width=500&lines=LOW+LEVEL+PROGRAMMING+PROJECT+IN+C" alt="Typing SVG" />
+	<img src="https://apply.holbertonschool.com/holberton-logo.png">
+	<br>
+	<img src="https://readme-typing-svg.herokuapp.com?font=Open+Sans&weight=900&pause=1000&color=1D5ABD&center=true&vCenter=true&width=500&lines=LOW+LEVEL+PROGRAMMING+PROJECT+IN+C" alt="Typing SVG" />
 </p>
 
 ## :memo: Objective
@@ -13,6 +13,10 @@ To write our own **printf()** function.
 The **_printf()** function mirrors the operation of the *stdio.h* C librairy function **printf()**.
 <br>
 **_printf()** formatted data to the standard output.
+
+## :hammer: Tech stack
+
+<img width="50px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png">
 
 ## :floppy_disk: Prototype for the main _printf() function
 `int _printf(const char *format, ...);`
@@ -95,7 +99,7 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 | specifiers_handler.c  | contains the function for associating a specifier with the corresponding function |
 |       _printf.c       |                         contains our main _printf function                        |
 |       README.md       |                              this readme file :wink:                              |
-|       resources       |            contain images for README.MD file and main.c example program           |
+|       resources       |            contain images for README.md file and main.c example program           |
 
 ## :floppy_disk: Specifiers
 
@@ -153,7 +157,11 @@ The cake is a lie!
 %
 ```
 
-*You can find our main.h test file in the resources folder.*
+*You can find our main.c test file in the resources folder.*
+
+## :blue_book: MAN page
+
+Execution: `man ./man_3_printf`
 
 ## :construction_worker: Authors
 **Fabien CHAVONET**
