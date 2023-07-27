@@ -86,15 +86,26 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 
 ![Image](https://github.com/Pandolowitz/holbertonschool-printf/blob/master/resources/flowchart.png?raw=true)
 
+## :open_file_folder: Files description
+
+|         FILE          |                                    DESCRIPTION                                    |
+| :-------------------: | :-------------------------------------------------------------------------------: |
+|         main.h        |              contains the main structure and the function prototypes              |
+| mandatory_functions.c |                     contains all my mandatory print functions                     |
+| specifiers_handler.c  | contains the function for associating a specifier with the corresponding function |
+|       _printf.c       |                         contains our main _printf function                        |
+|       README.md       |                              this readme file :wink:                              |
+|       resources       |            contain images for README.MD file and main.c example program           |
+
 ## :floppy_disk: Specifiers
 
-| FILE |           DESCRIPTION          |
-| :--: | :----------------------------: |
-|  %%  | print a literal '%' character  |
-|  %c  |    print a single character    |
-|  %s  | print a null-terminated string |
-|  %i  |    print an integer number     |
-|  %d  |     print a decimal number     |
+| SPECIFIER |           DESCRIPTION          |
+| :-------: | :----------------------------: |
+|     %%    | print a literal '%' character  |
+|     %c    |    print a single character    |
+|     %s    | print a null-terminated string |
+|     %i    |    print an integer number     |
+|     %d    |     print a decimal number     |
 
 ## Example
 
@@ -104,9 +115,9 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 #include "main.h"
 
 /**
-* main - Entry point of the program
+* main - entry point of the program
 *
-* Return: Always 0 (Success)
+* Return: always 0 (Success)
 */
 int main(void)
 {
@@ -127,6 +138,7 @@ int main(void)
 
 	return (0);
 }
+```
 
 **Output:**
 
