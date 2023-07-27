@@ -6,6 +6,8 @@
 
 int _printf(const char *format, ...);
 
+int specifiers_handler(const char specifier, va_list arguments);
+
 int _putchar(char character);
 
 int print_character(va_list arguments);
