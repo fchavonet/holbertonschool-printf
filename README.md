@@ -6,7 +6,7 @@
 <img src="https://readme-typing-svg.herokuapp.com?font=Open+Sans&weight=900&pause=1000&color=1D5ABD&center=true&vCenter=true&width=500&lines=LOW+LEVEL+PROGRAMMING+PROJECT+IN+C" alt="Typing SVG" />
 </p>
 
-## :mortar_board: Objective
+## :memo: Objective
 To write our own **printf()** function.
 
 ## :bookmark_tabs: Description
@@ -40,9 +40,9 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 	<ul>
 		<li>Returns: the number of characters printed.
 		<br>
-(excluding the null byte used to end output to strings).</li>
-		<li>write output to stdout, the standard output stream.</li>
-		<li>format is a character string. The format string is composed of zero or more directives. See man 3 printf for more detail. You need to handle the following conversion specifiers:</li>
+		(excluding the null byte used to end output to strings).</li>
+		<li>Write output to stdout, the standard output stream.</li>
+		<li>Format is a character string. The format string is composed of zero or more directives. See man 3 printf for more detail. You need to handle the following conversion specifiers:</li>
 		<ul>
 			<li>c</li>
 			<li>s</li>
@@ -66,10 +66,10 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 			<li>d</li>
 			<li>i</li>
 		</ul>
-	<li>You don’t have to handle the flag characters.</li>
-	<li>You don’t have to handle field width.</li>
-	<li>You don’t have to handle precision.</li>
-	<li>You don’t have to handle the length modifiers.</li>
+		<li>You don’t have to handle the flag characters.</li>
+		<li>You don’t have to handle field width.</li>
+		<li>You don’t have to handle precision.</li>
+		<li>You don’t have to handle the length modifiers.</li>
 	</ul>
 </details>
 
@@ -85,6 +85,63 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 ## :bar_chart: Flowcharts
 
 ![Image](https://github.com/Pandolowitz/holbertonschool-printf/blob/master/resources/flowchart.png?raw=true)
+
+## :floppy_disk: Specifiers
+
+| FILE |           DESCRIPTION          |
+| :--: | :----------------------------: |
+|  %%  | print a literal '%' character  |
+|  %c  |    print a single character    |
+|  %s  | print a null-terminated string |
+|  %i  |    print an integer number     |
+|  %d  |     print a decimal number     |
+
+## Example
+
+**Our own test program code (main.c):**
+
+```
+#include "main.h"
+
+/**
+* main - Entry point of the program
+*
+* Return: Always 0 (Success)
+*/
+int main(void)
+{
+	int positive_number = 42;
+	int negative_number = -42;
+	char character = 'A';
+	char *string = "The cake is a lie!";
+
+	_printf("%i\n", positive_number);
+	_printf("%d\n\n", negative_number);
+
+	_printf("%c\n", character);
+	_printf("%s\n\n", string);
+
+	_printf("42 is the answer to life, the universe, and everything...\n");
+
+	_printf("%%\n");
+
+	return (0);
+}
+
+**Output:**
+
+```
+42
+-42
+
+A
+The cake is a lie!
+
+42 is the answer to life, the universe, and everything...
+%
+```
+
+*You can find our main.h test file in the resources folder.*
 
 ## :construction_worker: Authors
 **Fabien CHAVONET**
