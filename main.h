@@ -6,4 +6,8 @@
 
 int _printf(const char *format, ...);
 
+int _putchar(char character);
+
+int print_character(va_list arguments);
+
 #endif
