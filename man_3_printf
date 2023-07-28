@@ -41,12 +41,16 @@ Prints an integer number.
 \fB%d\fR
 Prints a decimal number.
 
+.TP
+\fB%b\fR
+Prints an integer number converted in binary.
+
 .SH EXAMPLES
 The following examples demonstrate the usage of \fB_printf()\fR:
 
 .TP
-.B _printf("The number is: %d", 42);
-Prints "The number is: 42".
+.B _printf("%%");
+Prints "%".
 
 .TP
 .B _printf("%c", 'A');
@@ -57,8 +61,12 @@ Prints "A".
 Prints "The cake is a lie!".
 
 .TP
-.B _printf("%%");
-Prints "%".
+.B _printf("The number is: %i", 42);
+Prints "The number is: 42".
+
+.TP
+.B _printf(The number 42 converted into binary is "%b", 42);
+Prints "The number 42 converted into binary is 00101010".
 
 .SH NOTES
 This \fB_printf()\fP function is a simplified version of the standard \fBC\fP library function.
