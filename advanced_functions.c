@@ -11,8 +11,10 @@ int print_binary(va_list arguments)
 {
 	unsigned int number = va_arg(arguments, int);
 
-	int index_array = 0;
 	int array[32];
+	int index_array = 0;
+
+	int length = 0;
 
 	if (number == 0)
 	{
@@ -25,6 +27,8 @@ int print_binary(va_list arguments)
 		array[index_array] = number % 2;
 		number = number / 2;
 		index_array++;
+
+		length++;
 	}
 
 	for (index_array = index_array - 1 ; index_array >= 0 ; index_array--)
@@ -32,5 +36,5 @@ int print_binary(va_list arguments)
 		_putchar(array[index_array] + '0');
 	}
 
-	return (index_array);
+	return (length);
 }
