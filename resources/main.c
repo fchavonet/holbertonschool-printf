@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - Entry point of the program
+ * main - entry point of the program
  *
- * Return: Always 0 (Success)
+ * Return: always 0 (Success)
  */
 int main(void)
 {
@@ -18,7 +18,9 @@ int main(void)
 	_printf("%c\n", character);
 	_printf("%s\n\n", string);
 
-	_printf("42 is the answer to life, the universe, and everything...\n");
+	_printf("42 is the answer to life, the universe, and everything...\n\n");
+
+	_printf("The number 42 converted into binary is %b\n\n", positive_number);
 
 	_printf("%%\n");
 

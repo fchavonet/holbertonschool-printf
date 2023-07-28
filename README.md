@@ -41,7 +41,7 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 
 ## :mortar_board: Instructions
 
-- **Mandatory tasks**
+### Mandatory tasks
 
 <details>
 	<summary>
@@ -92,7 +92,7 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 	</ul>
 </details>
 
-- **Advanced tasks**
+### Advanced tasks
 
 <details>
 	<summary>
@@ -161,10 +161,10 @@ alex@ubuntu:~/c/printf$
 #include "main.h"
 
 /**
-* main - entry point of the program
-*
-* Return: always 0 (Success)
-*/
+ * main - entry point of the program
+ *
+ * Return: always 0 (Success)
+ */
 int main(void)
 {
 	int positive_number = 42;
