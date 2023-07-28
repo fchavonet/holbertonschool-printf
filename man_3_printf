@@ -22,10 +22,6 @@ On success, \fB _printf()\fP returns the number of characters printed (the total
 The following format specifiers are supported:
 
 .TP
-\fB%%\fR
-Prints a literal '%' character.
-
-.TP
 \fB%c\fR
 Prints a single character.
 
@@ -34,23 +30,31 @@ Prints a single character.
 Prints a null\-terminated string.
 
 .TP
-\fB%i\fR
-Prints an integer number.
+\fB%%\fR
+Prints a literal '%' character.
 
 .TP
 \fB%d\fR
 Prints a decimal number.
 
 .TP
+\fB%i\fR
+Prints an integer number.
+
+.TP
 \fB%b\fR
 Prints an integer number converted in binary.
 
-.SH EXAMPLES
-The following examples demonstrate the usage of \fB_printf()\fR:
+.TP
+\fB%u\fR
+Prints an unsigned integer number converted to binary.
 
 .TP
-.B _printf("%%");
-Prints "%".
+\fB%o\fR
+Prints an integer number converted to octal.
+
+.SH EXAMPLES
+The following examples demonstrate the usage of \fB_printf()\fR:
 
 .TP
 .B _printf("%c", 'A');
@@ -61,12 +65,24 @@ Prints "A".
 Prints "The cake is a lie!".
 
 .TP
+.B _printf("%%");
+Prints "%".
+
+.TP
 .B _printf("The number is: %i", 42);
 Prints "The number is: 42".
 
 .TP
 .B _printf(The number 42 converted into binary is "%b", 42);
 Prints "The number 42 converted into binary is 00101010".
+
+.TP
+.B _printf("%u\n", unsigned_integer);
+Prints "4294967295"
+
+.TP
+.B _printf("The number 42 converted into octal is %o\n", positive_number);
+Prints "The number 42 converted into octal is 52".
 
 .SH NOTES
 This \fB_printf()\fP function is a simplified version of the standard \fBC\fP library function.
