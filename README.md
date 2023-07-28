@@ -104,6 +104,7 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 			<li>b: the unsigned int argument is converted to binary</li>
 		</ul>
 	</u>
+<br>
 
 ```
 alex@ubuntu:~/c/printf$ cat main.c
@@ -155,7 +156,7 @@ alex@ubuntu:~/c/printf$
 | :-------------------: | :-------------------------------------------------------------------------------: |
 |         main.h        |              contains the main structure and the function prototypes              |
 | mandatory_functions.c |                     contains all my mandatory print functions                     |
-| advanced_functions.c  |                     contains all my advanced print functions                     |
+| advanced_functions.c  |                      contains all my advanced print functions                     |
 | specifiers_handler.c  | contains the function for associating a specifier with the corresponding function |
 |       _printf.c       |                         contains our main _printf function                        |
 |       README.md       |                              this readme file :wink:                              |
@@ -171,7 +172,7 @@ alex@ubuntu:~/c/printf$
 |     %d    |              print a decimal number                  |
 |     %i    |              print an integer number                 |
 |     %b    |     print an integer number converted to binary      |
-|     %u    | print an unsigned integer number converted to ninary |
+|     %u    | print an unsigned integer number converted to binary |
 |     %o    |      print an integer number converted to octal      |
 
 ## :computer: Example
@@ -237,6 +238,12 @@ The number 42 converted into octal is 52
 Execution: `man ./man_3_printf`
 
 ![Image](https://github.com/Pandolowitz/holbertonschool-printf/blob/master/resources/man_page.png?raw=true)
+
+## :hearts: Thanks
+
+A big thank you to all our Holberton School peers for their help and support throughout this project.
+
+Special thanks to [Hugo Castéras](https://github.com/hug0-cstrs), [Noah Vernhet](https://github.com/truuue) et [Yoann Rivet](https://github.com/SpStigma).
 
 ## :construction_worker: Authors
 **Fabien CHAVONET**
