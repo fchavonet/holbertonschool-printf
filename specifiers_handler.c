@@ -19,10 +19,12 @@ int specifiers_handler(const char specifier, va_list arguments)
 	format_handler array[] = {
 		{'c', print_character},
 		{'s', print_string},
+		{'%', print_percentage},
 		{'d', print_number},
 		{'i', print_number},
 		{'b', print_binary},
-		{'%', print_percentage},
+		{'u', print_unsigned_number},
+		{'o', print_octal},
 		{'\0', NULL}
 	};
 

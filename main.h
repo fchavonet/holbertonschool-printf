@@ -22,6 +22,8 @@ int print_number(va_list arguments);
 
 /* prototypes for advanced print functions */
 int print_binary(va_list arguments);
+int print_unsigned_number(va_list arguments);
+int print_octal(va_list arguments);
 
 /**
  * struct format_handler_structure - structure to handle format
