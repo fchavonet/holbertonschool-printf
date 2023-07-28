@@ -242,8 +242,8 @@ Execution: `man ./man_3_printf`
 ## :hearts: Thanks
 
 A big thank you to all our Holberton School peers for their help and support throughout this project.
-
-Special thanks to [Hugo Castéras](https://github.com/hug0-cstrs), [Noah Vernhet](https://github.com/truuue) et [Yoann Rivet](https://github.com/SpStigma).
+<br>
+Special thanks to [Hugo Castéras](https://github.com/hug0-cstrs), [Noah Vernhet](https://github.com/truuue) and [Yoann Rivet](https://github.com/SpStigma).
 
 ## :construction_worker: Authors
 **Fabien CHAVONET**
