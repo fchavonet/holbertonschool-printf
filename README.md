@@ -92,6 +92,40 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 	</ul>
 </details>
 
+**Advanced tasks**
+
+<details>
+	<summary>
+		<b>Task 3. (With a face like mine, I do better in print)
+	</summary>
+	<ul>
+		<li>Handle the following custom conversion specifiers:</li>
+		<ul>
+			<li>b: the unsigned int argument is converted to binary</li>
+		</ul>
+	</u>
+
+```
+alex@ubuntu:~/c/printf$ cat main.c
+#include "main.h"
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+    _printf("%b\n", 98);
+    return (0);
+}
+alex@ubuntu:~/c/printf$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 main.c
+alex@ubuntu:~/c/printf$ ./a.out
+1100010
+alex@ubuntu:~/c/printf$
+```
+</details>
+
 ## :bookmark_tabs: Flowcharts
 
 ![Image](https://github.com/Pandolowitz/holbertonschool-printf/blob/master/resources/flowchart.png?raw=true)
@@ -102,6 +136,7 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 | :-------------------: | :-------------------------------------------------------------------------------: |
 |         main.h        |              contains the main structure and the function prototypes              |
 | mandatory_functions.c |                     contains all my mandatory print functions                     |
+| advanced_functions.c  |                     contains all my advanced print functions                     |
 | specifiers_handler.c  | contains the function for associating a specifier with the corresponding function |
 |       _printf.c       |                         contains our main _printf function                        |
 |       README.md       |                              this readme file :wink:                              |
@@ -109,13 +144,14 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 
 ## :floppy_disk: Specifiers
 
-| SPECIFIER |           DESCRIPTION          |
-| :-------: | :----------------------------: |
-|     %%    | print a literal '%' character  |
-|     %c    |    print a single character    |
-|     %s    | print a null-terminated string |
-|     %i    |    print an integer number     |
-|     %d    |     print a decimal number     |
+| SPECIFIER |                 DESCRIPTION                 |
+| :-------: | :-----------------------------------------: |
+|     %%    |        print a literal '%' character        |
+|     %c    |           print a single character          |
+|     %s    |        print a null-terminated string       |
+|     %i    |          print an integer number            |
+|     %d    |           print a decimal number            |
+|     %b    | print an integer number converted to ninary |
 
 ## :computer: Example
 
