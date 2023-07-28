@@ -21,6 +21,7 @@ int specifiers_handler(const char specifier, va_list arguments)
 		{'s', print_string},
 		{'d', print_number},
 		{'i', print_number},
+		{'b', print_binary},
 		{'%', print_percentage},
 		{'\0', NULL}
 	};

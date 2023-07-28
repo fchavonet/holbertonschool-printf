@@ -20,6 +20,9 @@ int print_string(va_list arguments);
 int print_percentage(va_list arguments);
 int print_number(va_list arguments);
 
+/* prototypes for advanced print functions */
+int print_binary(va_list arguments);
+
 /**
  * struct format_handler_structure - structure to handle format
  *                                   specifiers and corresponding functions
