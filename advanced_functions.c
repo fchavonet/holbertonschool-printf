@@ -40,11 +40,13 @@ int print_binary(va_list arguments)
 }
 
 /**
- * print_unsigned_number - print an unsigned number to the standard output
+ * print_unsigned_number - print an unsigned integer
+ *                         number to the standard output
  *
- * @arguments: a va_list containing the unsigned number to be printed
+ * @arguments: a va_list containing the unsigned integer
+ *             number to be printed
  *
- * Return: the number of characters printed
+ * Return: the number of digits printed
  */
 int print_unsigned_number(va_list arguments)
 {
