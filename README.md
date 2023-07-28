@@ -96,7 +96,7 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 
 <details>
 	<summary>
-		<b>Task 3. (With a face like mine, I do better in print)
+		<b>Task 3. (With a face like mine, I do better in print)</b>
 	</summary>
 	<ul>
 		<li>Handle the following custom conversion specifiers:</li>
@@ -128,7 +128,7 @@ alex@ubuntu:~/c/printf$
 
 <details>
 	<summary>
-		<b>Task 4. (What one has not experienced, one will never understand in print)
+		<b>Task 4. (What one has not experienced, one will never understand in print)</b>
 	</summary>
 	<ul>
 		<li>Handle the following conversion specifiers:</li>
@@ -194,7 +194,7 @@ int main(void)
         char character = 'A';
         char *string = "The cake is a lie!";
 
-        _printf("\n%c\n", character);
+        _printf("%c\n", character);
         _printf("%s\n", string);
         _printf("%%\n\n");
 
@@ -206,7 +206,7 @@ int main(void)
         _printf("The number 42 converted into binary is %b\n\n", positive_number);
 
         _printf("%u\n", unsigned_integer);
-        _printf("The number 42 converted into octal is %o\n\n", positive_number);
+        _printf("The number 42 converted into octal is %o\n", positive_number);
 
         return (0);
 }
@@ -228,7 +228,6 @@ The number 42 converted into binary is 101010
 
 4294967295
 The number 42 converted into octal is 52
-
 ```
 
 *You can find our main.c test file in the resources folder.*
