@@ -9,23 +9,25 @@
 ## :memo: Objective
 To write our own **printf()** function.
 
-## :bookmark_tabs: Description
+## :page_facing_up: Description
 The **_printf()** function mirrors the operation of the *stdio.h* C librairy function **printf()**.
 <br>
 **_printf()** formatted data to the standard output.
 
 ## :hammer: Tech stack
 
-<img width="50px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Logo-ubuntu_cof-orange-hex.svg/1200px-Logo-ubuntu_cof-orange-hex.svg.png">
-
-<img wigth="50px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/544px-Vimlogo.svg.png">
-
-<img width="45px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png">
+<div style="display: flex;">
+	<img width="50px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Logo-ubuntu_cof-orange-hex.svg/1200px-Logo-ubuntu_cof-orange-hex.svg.png">
+	 &emsp;
+	<img wigth="50px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/544px-Vimlogo.svg.png">
+	 &emsp;
+	<img width="45px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png">
+</div>
 
 ## :floppy_disk: Prototype for the main _printf() function
 `int _printf(const char *format, ...);`
 
-## :bookmark_tabs: Requirements
+## :clipboard: Requirements
 - Allowed editors: **vim** or **emacs**.
 - All the files will be compiled on **Ubuntu 20.04 LTS** using **gcc**.
 - The code should use the **betty style**.
@@ -166,6 +168,8 @@ The cake is a lie!
 ## :blue_book: MAN page
 
 Execution: `man ./man_3_printf`
+
+![Image](https://github.com/Pandolowitz/holbertonschool-printf/blob/master/resources/man_page.png?raw=true)
 
 ## :construction_worker: Authors
 **Fabien CHAVONET**
