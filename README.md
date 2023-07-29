@@ -6,15 +6,47 @@
 	<img src="https://readme-typing-svg.herokuapp.com?font=Open+Sans&weight=900&pause=1000&color=1D5ABD&center=true&vCenter=true&width=500&lines=LOW+LEVEL+PROGRAMMING+PROJECT+IN+C" alt="Typing SVG" />
 </p>
 
-## :memo: Objective
+## :bookmark: Table of contents
+<details>
+        <summary>
+		CLICK TO ENLARGE :innocent:
+        </summary>
+	:page_facing_up: <a href="#description">Description</a>
+        <br>
+        :hammer: <a href="#tech-stack">Tech stack</a>
+        <br>
+        :floppy_disk: <a href="#prototype">Prototype for the main _printf() function</a>
+        <br>
+        :clipboard: <a href="#requirements">Requirements</a>
+        <br>
+        :floppy_disk: <a href="#compilation-command">Compilation command</a>
+        <br>
+        :mortar_board: <a href="#instructions">Instructions</a>
+        <br>
+        :bookmark_tabs: <a href="#flowcharts">Flowcharts</a>
+        <br>
+        :open_file_folder: <a href="#files-description">Files description</a>
+        <br>
+        :floppy_disk: <a href="#specifiers">Specifiers</a>
+        <br>
+        :computer: <a href="#example">Example</a>
+        <br>
+        :blue_book: <a href="#man-page">MAN page</a>
+        <br>
+        :heartpulse: <a href="#thanks">Thanks</a>
+        <br>
+        :construction_worker: <a href="#authors">Authors</a>
+</details>
+
+## :memo: <span id="objective">Objective</span>
 To write our own **printf()** function.
 
-## :page_facing_up: Description
+## :page_facing_up: <span id="description">Description</span>
 The **_printf()** function mirrors the operation of the *stdio.h* C librairy function **printf()**.
 <br>
 **_printf()** formatted data to the standard output.
 
-## :hammer: Tech stack
+## :hammer: <span id="tech-stack">Tech stack</a>
 
 <div style="display: flex;">
 	<img width="50px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Logo-ubuntu_cof-orange-hex.svg/1200px-Logo-ubuntu_cof-orange-hex.svg.png">
@@ -24,10 +56,10 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 	<img width="45px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png">
 </div>
 
-## :floppy_disk: Prototype for the main _printf() function
+## :floppy_disk: <span id="prototype">Prototype for the main _printf() function</a>
 `int _printf(const char *format, ...);`
 
-## :clipboard: Requirements
+## :clipboard: <span id="requirements">Requirements</span>
 - Allowed editors: **vim** or **emacs**.
 - All the files will be compiled on **Ubuntu 20.04 LTS** using **gcc**.
 - The code should use the **betty style**.
@@ -36,12 +68,12 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 - The prototypes of all th functions should be included in the header file called **main.h**.
 - The header files should be include guarded.
 
-## :floppy_disk: Compilation command
+## :floppy_disk: <span id="compilation-command">Compilation command</a>
 `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c`
 
-## :mortar_board: Instructions
+## :mortar_board: <span id="instructions">Instructions</span>
 
-### Mandatory tasks
+### <span id="mandatory-tasks">Mandatory tasks</span>
 
 <details>
 	<summary>
@@ -92,7 +124,7 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 	</ul>
 </details>
 
-### Advanced tasks
+### <span id="advanced-tasks">Advanced tasks</a>
 
 <details>
 	<summary>
@@ -139,18 +171,18 @@ alex@ubuntu:~/c/printf$
 			<li>x</li>
 			<li>X</li>
 		</ul>
-		<li>You don’t have to handle the flag characters</li>
-		<li>You don’t have to handle field width</li>
-		<li>You don’t have to handle precision</li>
-		<li>You don’t have to handle the length modifiers</li>
+		<li>You don’t have to handle the flag characters.</li>
+		<li>You don’t have to handle field width.</li>
+		<li>You don’t have to handle precision.</li>
+		<li>You don’t have to handle the length modifiers.</li>
 	</ul>
 </details>
 
-## :bookmark_tabs: Flowcharts
+## :bookmark_tabs: <span id="flowcharts">Flowcharts</a>
 
 ![Image](https://github.com/Pandolowitz/holbertonschool-printf/blob/master/resources/flowchart.png?raw=true)
 
-## :open_file_folder: Files description
+## :open_file_folder: <span id="files-description">Files description</span>
 
 |         FILE          |                                    DESCRIPTION                                    |
 | :-------------------: | :-------------------------------------------------------------------------------: |
@@ -162,7 +194,7 @@ alex@ubuntu:~/c/printf$
 |       README.md       |                              this readme file :wink:                              |
 |       resources       |            contain images for README.md file and main.c example program           |
 
-## :floppy_disk: Specifiers
+## :floppy_disk: <span id="specifiers">Specifiers</a>
 
 | SPECIFIER |                     DESCRIPTION                      |
 | :-------: | :--------------------------------------------------: |
@@ -175,7 +207,7 @@ alex@ubuntu:~/c/printf$
 |     %u    | print an unsigned integer number converted to binary |
 |     %o    |      print an integer number converted to octal      |
 
-## :computer: Example
+## :computer: <span id="example">Example</a>
 
 **Our own test program code (main.c):**
 
@@ -233,19 +265,19 @@ The number 42 converted into octal is 52
 
 *You can find our main.c test file in the resources folder.*
 
-## :blue_book: MAN page
+## :blue_book: <span id="man-page">MAN page</a>
 
 Execution: `man ./man_3_printf`
 
 ![Image](https://github.com/Pandolowitz/holbertonschool-printf/blob/master/resources/man_page.png?raw=true)
 
-## :hearts: Thanks
+## :hearts: <span id="thanks">Thanks</span>
 
 A big thank you to all our Holberton School peers for their help and support throughout this project.
 <br>
 Special thanks to [Hugo Castéras](https://github.com/hug0-cstrs), [Noah Vernhet](https://github.com/truuue) and [Yoann Rivet](https://github.com/SpStigma).
 
-## :construction_worker: Authors
+## :construction_worker: <span id="authors">Authors</span>
 **Fabien CHAVONET**
 - Github: [@Pandolowitz](https://github.com/Pandolowitz)
 

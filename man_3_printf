@@ -47,7 +47,7 @@ Prints an integer number converted in binary.
 
 .TP
 \fB%u\fR
-Prints an unsigned integer number converted to binary.
+Prints an unsigned integer number.
 
 .TP
 \fB%o\fR
@@ -77,11 +77,11 @@ Prints "The number is: 42".
 Prints "The number 42 converted into binary is 00101010".
 
 .TP
-.B _printf("%u\n", unsigned_integer);
+.B _printf("%u", unsigned_integer);
 Prints "4294967295"
 
 .TP
-.B _printf("The number 42 converted into octal is %o\n", positive_number);
+.B _printf("The number 42 converted into octal is %o", positive_number);
 Prints "The number 42 converted into octal is 52".
 
 .SH NOTES
