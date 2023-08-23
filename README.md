@@ -1,17 +1,22 @@
-# <p align="center">C - printf</p>
-
 <p align="center">
 	<img src="https://apply.holbertonschool.com/holberton-logo.png">
 	<br>
 	<img src="https://readme-typing-svg.herokuapp.com?font=Open+Sans&weight=900&pause=1000&color=1D5ABD&center=true&vCenter=true&width=500&lines=LOW+LEVEL+PROGRAMMING+PROJECT+IN+C" alt="Typing SVG" />
 </p>
 
+#
+
+# <p align="center">C - printf</p>
+
 ## :bookmark: Table of contents
 <details>
         <summary>
 		CLICK TO ENLARGE :innocent:
         </summary>
-	:page_facing_up: <a href="#description">Description</a>
+		 </summary>
+        :memo: <a href="#objective">Objective</a>
+		<br>
+		:page_facing_up: <a href="#description">Description</a>
         <br>
         :hammer: <a href="#tech-stack">Tech stack</a>
         <br>
@@ -43,7 +48,7 @@ To write our own **printf()** function.
 
 ## :page_facing_up: <span id="description">Description</span>
 The **_printf()** function mirrors the operation of the *stdio.h* C librairy function **printf()**.
-<br>
+<br><br>
 **_printf()** formatted data to the standard output.
 
 ## :hammer: <span id="tech-stack">Tech stack</a>
@@ -186,13 +191,14 @@ alex@ubuntu:~/c/printf$
 
 |         FILE          |                                    DESCRIPTION                                    |
 | :-------------------: | :-------------------------------------------------------------------------------: |
-|         main.h        |              contains the main structure and the function prototypes              |
-| mandatory_functions.c |                     contains all my mandatory print functions                     |
-| advanced_functions.c  |                      contains all my advanced print functions                     |
-| specifiers_handler.c  | contains the function for associating a specifier with the corresponding function |
-|       _printf.c       |                         contains our main _printf function                        |
-|       README.md       |                              this readme file :wink:                              |
 |       resources       |            contain images for README.md file and main.c example program           |
+|       _printf.c       |                         contains our main _printf function                        |
+| advanced_functions.c  |                      contains all my advanced print functions                     |
+|         main.h        |              contains the main structure and the function prototypes              |
+|      man_3_printf     |                         man page of the _printf function                          |
+| mandatory_functions.c |                     contains all my mandatory print functions                     |
+|       README.md       |                              this readme file :wink:                              |
+| specifiers_handler.c  | contains the function for associating a specifier with the corresponding function |
 
 ## :floppy_disk: <span id="specifiers">Specifiers</a>
 
