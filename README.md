@@ -192,12 +192,12 @@ alex@ubuntu:~/c/printf$
 |         FILE          |                                    DESCRIPTION                                    |
 | :-------------------: | :-------------------------------------------------------------------------------: |
 |       resources       |            contain images for README.md file and main.c example program           |
+|       README.md       |                              this readme file :wink:                              |
 |       _printf.c       |                         contains our main _printf function                        |
 | advanced_functions.c  |                      contains all my advanced print functions                     |
 |         main.h        |              contains the main structure and the function prototypes              |
 |      man_3_printf     |                         man page of the _printf function                          |
 | mandatory_functions.c |                     contains all my mandatory print functions                     |
-|       README.md       |                              this readme file :wink:                              |
 | specifiers_handler.c  | contains the function for associating a specifier with the corresponding function |
 
 ## :floppy_disk: <span id="specifiers">Specifiers</a>
