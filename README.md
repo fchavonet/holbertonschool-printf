@@ -11,7 +11,7 @@
 ## :bookmark: Table of contents
 <details>
         <summary>
-		CLICK TO ENLARGE :innocent:
+		CLICK TO ENLARGE
         </summary>
 		 </summary>
         :memo: <a href="#objective">Objective</a>
@@ -44,7 +44,7 @@
 </details>
 
 ## :memo: <span id="objective">Objective</span>
-To write our own **printf()** function.
+To write my own **printf()** function.
 
 ## :page_facing_up: <span id="description">Description</span>
 The **_printf()** function mirrors the operation of the *stdio.h* C librairy function **printf()**.
@@ -54,11 +54,11 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 ## :hammer: <span id="tech-stack">Tech stack</a>
 
 <div style="display: flex;">
-	<img width="50px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Logo-ubuntu_cof-orange-hex.svg/1200px-Logo-ubuntu_cof-orange-hex.svg.png">
-	 &emsp;
-	<img wigth="50px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/544px-Vimlogo.svg.png">
-	 &emsp;
 	<img width="45px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png">
+	&emsp;
+	<img width="50px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Logo-ubuntu_cof-orange-hex.svg/1200px-Logo-ubuntu_cof-orange-hex.svg.png">
+	&emsp;
+	<img wigth="50px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/544px-Vimlogo.svg.png">
 </div>
 
 ## :floppy_disk: <span id="prototype">Prototype for the main _printf() function</a>
@@ -138,7 +138,7 @@ The **_printf()** function mirrors the operation of the *stdio.h* C librairy fun
 	<ul>
 		<li>Handle the following custom conversion specifiers:</li>
 		<ul>
-			<li>b: the unsigned int argument is converted to binary</li>
+			<li>b: the unsigned int argument is converted to binary.</li>
 		</ul>
 	</u>
 <br>
@@ -192,12 +192,12 @@ alex@ubuntu:~/c/printf$
 |         FILE          |                                    DESCRIPTION                                    |
 | :-------------------: | :-------------------------------------------------------------------------------: |
 |       resources       |            contain images for README.md file and main.c example program           |
-|       README.md       |                              this readme file :wink:                              |
-|       _printf.c       |                         contains our main _printf function                        |
+|       _printf.c       |                         contains my main _printf function                         |
 | advanced_functions.c  |                      contains all my advanced print functions                     |
 |         main.h        |              contains the main structure and the function prototypes              |
 |      man_3_printf     |                         man page of the _printf function                          |
 | mandatory_functions.c |                     contains all my mandatory print functions                     |
+|       README.md       |                              this readme file :wink:                              |
 | specifiers_handler.c  | contains the function for associating a specifier with the corresponding function |
 
 ## :floppy_disk: <span id="specifiers">Specifiers</a>
@@ -215,7 +215,7 @@ alex@ubuntu:~/c/printf$
 
 ## :computer: <span id="example">Example</a>
 
-**Our own test program code (main.c):**
+**My own test program code (main.c):**
 
 ```
 #include "main.h"
@@ -269,7 +269,7 @@ The number 42 converted into binary is 101010
 The number 42 converted into octal is 52
 ```
 
-*You can find our main.c test file in the resources folder.*
+*You can find my main.c test file in the resources folder.*
 
 ## :blue_book: <span id="man-page">MAN page</a>
 
@@ -279,13 +279,10 @@ Execution: `man ./man_3_printf`
 
 ## :hearts: <span id="thanks">Thanks</span>
 
-A big thank you to all our Holberton School peers for their help and support throughout this project.
+A big thank you to all my Holberton School peers for their help and support throughout this project.
 <br>
 Special thanks to [Hugo Castéras](https://github.com/hug0-cstrs), [Noah Vernhet](https://github.com/truuue) and [Yoann Rivet](https://github.com/SpStigma).
 
 ## :construction_worker: <span id="authors">Authors</span>
 **Fabien CHAVONET**
 - Github: [@Pandolowitz](https://github.com/Pandolowitz)
-
-**Saadi KHEMCHANE**
-- Github: [@SaadiKhemchane](https://github.com/SaadiKhemchane)
