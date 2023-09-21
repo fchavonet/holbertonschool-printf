@@ -1,149 +1,164 @@
-<p align="center">
-	<img src="https://apply.holbertonschool.com/holberton-logo.png">
+<img height="50" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/refs/heads/main/assets/images/logo-holberton_school.webp" alt="Holberton School logo">
+
+# C - printf
+
+## Table of contents
+
+<details>
+	<summary>
+		CLICK TO ENLARGE 😇
+	</summary>
+	<a href="#description">Description</a>
 	<br>
-	<img src="https://readme-typing-svg.herokuapp.com?font=Open+Sans&weight=900&pause=1000&color=1D5ABD&center=true&vCenter=true&width=500&lines=LOW+LEVEL+PROGRAMMING+PROJECT+IN+C" alt="Typing SVG" />
-</p>
+	<a href="#objectives">Objectives</a>
+	<br>
+	<a href="#requirements">Requirements</a>
+	<br>
+	<a href="#instructions">Instructions</a>
+	<br>
+	<a href="#tech-stack">Tech stack</a>
+	<br>
+	<a href="#files-description">Files description</a>
+	<br>
+	<a href="#installation_and_how_to_use">Installation and how to use</a>
+	<br>
+	<a href="#thanks">Thanks</a>
+	<br>
+	<a href="#authors">Authors</a>
+</details>
+
+## <span id="description">Description</span>
+
+This project is a recreation of the C library function `printf`, developed as part of the Holberton School curriculum.  
+It aims to handle formatted output to the standard output stream using only low-level system calls, while respecting strict constraints.
+
+<table>
+    <tr valign="top">
+        <td align="center">
+            <picture>
+                <source media="(prefers-color-scheme: dark)" srcset="./assets/images/printf_flowshart-dark.webp">
+                <source media="(prefers-color-scheme: light)" srcset="./assets/images/printf_flowshart-light.webp">
+                <img width="100%" src="./assets/images/printf_flowshart.webp" alt="printf Flowchart">
+            </picture>
+        </td>
+    </tr>
+</table>
+
+## <span id="objectives">Objectives</span>
+
+At the end of this project, I should be able to explain to anyone, **without the help of Google**:
+
+- How variadic functions work in C.
+- How the `va_list`, `va_start`, `va_arg`, and `va_end` macros are used.
+- The difference between low-level and high-level output functions.
+- How to structure a large C project with multiple files and headers.
+- How to manage group projects and pair programming effectively.
+- How to write and use a custom `man` page.
+
+## <span id="requirements">Requirements</span>
+
+- My programs and functions will be compiled with `gcc` using the flags `-Wall`, `-Werror`, `-Wextra`, `-pedantic` and `-std=gnu89`.
+- All my files should end with a new line.
+- My code should use the Betty style. It will be checked using [betty-style.pl](https://github.com/hs-hq/Betty/blob/main/betty-style.pl) and [betty-doc.pl](https://github.com/hs-hq/Betty/blob/main/betty-doc.pl).
+- I am not allowed to use global variables.
+- No more than 5 functions per file.
+- The prototypes of all my functions should be included in my header file called `main.h`.
+- All my header files should be include guarded.
+
+<details>
+    <summary>
+        List of allowed functions and system calls.
+    </summary>
+
+- `write` (man 2 write)
+- `malloc` (man 3 malloc)
+- `free` (man 3 free)
+- `va_start` (man 3 va_start)
+- `va_end` (man 3 va_end)
+- `va_copy` (man 3 va_copy)
+- `va_arg` (man 3 va_arg)
+
+</details>
+
+## <span id="instructions">Instructions</span>
+
+### Mandatory
+
+<details>
+	<summary>
+		<b>0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life</b>
+	</summary>
+	<br>
+
+Write a function that produces output according to a format.
+
+- Prototype: `int _printf(const char *format, ...);`.
+- Returns: the number of characters printed (excluding the null byte used to end output to strings).
+- Write output to stdout, the standard output stream.
+- `format` is a character string. The format string is composed of zero or more directives. See `man 3 printf` for more detail. You need to handle the following conversion specifiers:
+	- `c`
+	- `s`
+	- `%`
+- You don’t have to reproduce the buffer handling of the C library `printf` function.
+- You don’t have to handle the flag characters.
+- You don’t have to handle field width.
+- You don’t have to handle precision.
+- You don’t have to handle the length modifiers.
 
 #
-
-# <p align="center">C - printf</p>
-
-## :bookmark: Table of contents
-<details>
-        <summary>
-		CLICK TO ENLARGE
-        </summary>
-		 </summary>
-        :memo: <a href="#objective">Objective</a>
-		<br>
-		:page_facing_up: <a href="#description">Description</a>
-        <br>
-        :hammer: <a href="#tech-stack">Tech stack</a>
-        <br>
-        :floppy_disk: <a href="#prototype">Prototype for the main _printf() function</a>
-        <br>
-        :clipboard: <a href="#requirements">Requirements</a>
-        <br>
-        :floppy_disk: <a href="#compilation-command">Compilation command</a>
-        <br>
-        :mortar_board: <a href="#instructions">Instructions</a>
-        <br>
-        :bookmark_tabs: <a href="#flowcharts">Flowcharts</a>
-        <br>
-        :open_file_folder: <a href="#files-description">Files description</a>
-        <br>
-        :floppy_disk: <a href="#specifiers">Specifiers</a>
-        <br>
-        :computer: <a href="#example">Example</a>
-        <br>
-        :blue_book: <a href="#man-page">MAN page</a>
-        <br>
-        :heartpulse: <a href="#thanks">Thanks</a>
-        <br>
-        :construction_worker: <a href="#authors">Authors</a>
-</details>
-
-## :memo: <span id="objective">Objective</span>
-To write my own **printf()** function.
-
-## :page_facing_up: <span id="description">Description</span>
-The **_printf()** function mirrors the operation of the *stdio.h* C librairy function **printf()**.
-<br><br>
-**_printf()** formatted data to the standard output.
-
-## :hammer: <span id="tech-stack">Tech stack</a>
-
-<div style="display: flex;">
-	<img width="45px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png">
-	&emsp;
-	<img width="50px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Logo-ubuntu_cof-orange-hex.svg/1200px-Logo-ubuntu_cof-orange-hex.svg.png">
-	&emsp;
-	<img wigth="50px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/544px-Vimlogo.svg.png">
-</div>
-
-## :floppy_disk: <span id="prototype">Prototype for the main _printf() function</a>
-`int _printf(const char *format, ...);`
-
-## :clipboard: <span id="requirements">Requirements</span>
-- Allowed editors: **vim** or **emacs**.
-- All the files will be compiled on **Ubuntu 20.04 LTS** using **gcc**.
-- The code should use the **betty style**.
-- Global variables are not allowed.
-- No more than 5 functions per file.
-- The prototypes of all th functions should be included in the header file called **main.h**.
-- The header files should be include guarded.
-
-## :floppy_disk: <span id="compilation-command">Compilation command</a>
-`gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c`
-
-## :mortar_board: <span id="instructions">Instructions</span>
-
-### <span id="mandatory-tasks">Mandatory tasks</span>
-
-<details>
-	<summary>
-		<b>Task 0. (I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life)</b>
-	</summary>
-	<ul>
-		<li>Returns: the number of characters printed.
-		<br>
-		(excluding the null byte used to end output to strings).</li>
-		<li>Write output to stdout, the standard output stream.</li>
-		<li>Format is a character string. The format string is composed of zero or more directives. See man 3 printf for more detail. You need to handle the following conversion specifiers:</li>
-		<ul>
-			<li>c</li>
-			<li>s</li>
-			<li>%</li>
-		</ul>
-		<li>You don’t have to reproduce the buffer handling of the C library printf function.</li>
-		<li>You don’t have to handle the flag characters.</li>
-		<li>You don’t have to handle field width.</li>
-		<li>You don’t have to handle precision.</li>
-		<li>You don’t have to handle the length modifie.</li>
-	</ul>
+**Repo:**
+- GitHub repository: `holbertonschool-printf`.
+<hr>
 </details>
 
 <details>
 	<summary>
-		<b>Task 1. (Education is when you read the fine print. Experience is what you get if you don't)</b>
+		<b>1. Education is when you read the fine print. Experience is what you get if you don't</b>
 	</summary>
-	<ul>
-		<li>Handle the following conversion specifiers:</li>
-		<ul>
-			<li>d</li>
-			<li>i</li>
-		</ul>
-		<li>You don’t have to handle the flag characters.</li>
-		<li>You don’t have to handle field width.</li>
-		<li>You don’t have to handle precision.</li>
-		<li>You don’t have to handle the length modifiers.</li>
-	</ul>
+	<br>
+
+Handle the following conversion specifiers:
+
+- `d`
+- `i`
+- You don’t have to handle the flag characters.
+- You don’t have to handle field width.
+- You don’t have to handle precision.
+- You don’t have to handle the length modifiers.
+
+#
+**Repo:**
+- GitHub repository: `holbertonschool-printf`.
+<hr>
 </details>
 
 <details>
 	<summary>
-		<b>Task 2. (Just because it's in print doesn't mean it's the gospel)</b>
+		<b>2. Just because it's in print doesn't mean it's the gospel</b>
 	</summary>
-	<ul>
-		<li>Create a man page for your function.</li>
-	</ul>
+	<br>
+
+Create a man page for your function.
+
+#
+**Repo:**
+- GitHub repository: `holbertonschool-printf`.
+<hr>
 </details>
 
-### <span id="advanced-tasks">Advanced tasks</a>
+### Advanced
 
 <details>
 	<summary>
-		<b>Task 3. (With a face like mine, I do better in print)</b>
+		<b>3. With a face like mine, I do better in print</b>
 	</summary>
-	<ul>
-		<li>Handle the following custom conversion specifiers:</li>
-		<ul>
-			<li>b: the unsigned int argument is converted to binary.</li>
-		</ul>
-	</u>
-<br>
+	<br>
 
-```
+Handle the following custom conversion specifiers:
+
+- `b`: the unsigned int argument is converted to binary.
+
+```bash
 alex@ubuntu:~/c/printf$ cat main.c
 #include "main.h"
 
@@ -162,98 +177,108 @@ alex@ubuntu:~/c/printf$ ./a.out
 1100010
 alex@ubuntu:~/c/printf$
 ```
+
+#
+**Repo:**
+- GitHub repository: `holbertonschool-printf`.
+<hr>
 </details>
 
 <details>
 	<summary>
-		<b>Task 4. (What one has not experienced, one will never understand in print)</b>
+		<b>4. What one has not experienced, one will never understand in print</b>
 	</summary>
-	<ul>
-		<li>Handle the following conversion specifiers:</li>
-		<ul>
-			<li>u</li>
-			<li>o</li>
-			<li>x</li>
-			<li>X</li>
-		</ul>
-		<li>You don’t have to handle the flag characters.</li>
-		<li>You don’t have to handle field width.</li>
-		<li>You don’t have to handle precision.</li>
-		<li>You don’t have to handle the length modifiers.</li>
-	</ul>
+	<br>
+
+Handle the following conversion specifiers:
+
+- `u`
+- `o`
+- `x`
+- `X`
+- You don’t have to handle the flag characters.
+- You don’t have to handle field width.
+- You don’t have to handle precision.
+- You don’t have to handle the length modifiers.
+
+#
+**Repo:**
+- GitHub repository: `holbertonschool-printf`.
+<hr>
 </details>
 
-## :bookmark_tabs: <span id="flowcharts">Flowcharts</a>
+## <span id="tech-stack">Tech stack</span>
 
-![Image](https://github.com/Pandolowitz/holbertonschool-printf/blob/master/resources/flowchart.png?raw=true)
+<p align="left">
+    <img src="https://img.shields.io/badge/C-a8b9cc?logo=&logoColor=black&style=for-the-badge" alt="C badge">
+    <img src="https://img.shields.io/badge/GIT-f05032?logo=git&logoColor=white&style=for-the-badge" alt="Git badge">
+    <img src="https://img.shields.io/badge/GITHUB-181717?logo=github&logoColor=white&style=for-the-badge" alt="GitHub badge">
+    <img src="https://img.shields.io/badge/VIM-019733?logo=vim&logoColor=white&style=for-the-badge" alt="VIM badge">
+</p>
 
-## :open_file_folder: <span id="files-description">Files description</span>
+## <span id="files-description">Files description</span>
 
-|         FILE          |                                    DESCRIPTION                                    |
-| :-------------------: | :-------------------------------------------------------------------------------: |
-|       resources       |            contain images for README.md file and main.c example program           |
-|       _printf.c       |                         contains my main _printf function                         |
-| advanced_functions.c  |                      contains all my advanced print functions                     |
-|         main.h        |              contains the main structure and the function prototypes              |
-|      man_3_printf     |                         man page of the _printf function                          |
-| mandatory_functions.c |                     contains all my mandatory print functions                     |
-|       README.md       |                              this readme file :wink:                              |
-| specifiers_handler.c  | contains the function for associating a specifier with the corresponding function |
+| **FILES**               | **DESCRIPTION**                                                                    |
+| :---------------------: | ---------------------------------------------------------------------------------- |
+| `assets`                | Contains the resources required for the repository.                                |
+| `main.c`                | Test file showcasing `_printf` with various format specifiers.                     |
+| `main.h`                | Contains the main structure and the function prototypes.                           |
+| `_printf.c`             | Contains my main `_printf` function.                                               |
+| `specifiers_handler.c`  | Contains the function for associating a specifier with the corresponding function. |
+| `mandatory_functions.c` | Contains all my mandatory print functions.                                         |
+| `advanced_functions.c`  | Contains all my advanced print functions.                                          |
+| `man_3_printf`          | `man` page of the `_printf` function.                                              |
+| `README.md`             | The README file you are currently reading 😉.                                      |
 
-## :floppy_disk: <span id="specifiers">Specifiers</a>
+> `main.c` is provided for demonstration purposes only and is not part of the mandatory project files.
 
-| SPECIFIER |                     DESCRIPTION                      |
-| :-------: | :--------------------------------------------------: |
-|     %c    |               print a single character               |
-|     %s    |           print a null-terminated string             |
-|     %%    |            print a literal '%' character             |
-|     %d    |              print a decimal number                  |
-|     %i    |              print an integer number                 |
-|     %b    |     print an integer number converted to binary      |
-|     %u    | print an unsigned integer number converted to binary |
-|     %o    |      print an integer number converted to octal      |
+## <span id="installation_and_how_to_use">Installation and how to use</span>
 
-## :computer: <span id="example">Example</a>
+### Installation:
 
-**My own test program code (main.c):**
+1. Clone this repository:
+    - Open your preferred Terminal.
+    - Navigate to the directory where you want to clone the repository.
+    - Run the following command:
 
-```
-#include "main.h"
-
-/**
- * main - entry point of the program
- *
- * Return: always 0 (Success)
- */
-int main(void)
-{
-        int positive_number = 42;
-        int negative_number = -42;
-        unsigned int unsigned_integer = 4294967295;
-        char character = 'A';
-        char *string = "The cake is a lie!";
-
-        _printf("%c\n", character);
-        _printf("%s\n", string);
-        _printf("%%\n\n");
-
-        _printf("42 is the answer to life, the universe, and everything...\n\n");
-
-        _printf("%d\n", positive_number);
-        _printf("%i\n\n", negative_number);
-
-        _printf("The number 42 converted into binary is %b\n\n", positive_number);
-
-        _printf("%u\n", unsigned_integer);
-        _printf("The number 42 converted into octal is %o\n", positive_number);
-
-        return (0);
-}
+```bash
+git clone https://github.com/fchavonet/holbertonschool-printf.git
 ```
 
-**Output:**
+2. Open the repository you've just cloned.
 
+3. Compile the source code:
+
+```bash
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c -o test_printf
 ```
+
+> A `main.c` test file is provided for demonstration purposes.
+> You can modify it to try different format specifiers supported by `_printf` (see table below).
+
+
+| **SPECIFIERS** | **DESCRIPTION**                          |
+| :------------: | ---------------------------------------- |
+| `%c`           | Print a single character.                |
+| `%s`           | Print a null-terminated string.          |
+| `%%`           | Print a literal '%' character.           |
+| `%d`           | Print a signed decimal number.           |
+| `%i`           | Print a signed integer.                  |
+| `%b`           | Print an integer in binary (custom).     |
+| `%u`           | Print an unsigned decimal number.        |
+| `%o`           | Print an integer in octal.               |
+
+### How to use:
+
+1. Run the program:
+
+```bash
+./test_printf
+```
+
+Expected output:
+
+```bash
 A
 The cake is a lie!
 %
@@ -269,20 +294,19 @@ The number 42 converted into binary is 101010
 The number 42 converted into octal is 52
 ```
 
-*You can find my main.c test file in the resources folder.*
+2. Open the MAN page:
 
-## :blue_book: <span id="man-page">MAN page</a>
+```bash
+man ./man_3_printf
+```
 
-Execution: `man ./man_3_printf`
+> If the file does not open, you may need to grant execution permissions first.
 
-![Image](https://github.com/Pandolowitz/holbertonschool-printf/blob/master/resources/man_page.png?raw=true)
+## <span id="thanks">Thanks</span>
 
-## :hearts: <span id="thanks">Thanks</span>
+- A big thank you to all my Holberton School peers for their help and support throughout this project.
 
-A big thank you to all my Holberton School peers for their help and support throughout this project.
-<br>
-Special thanks to [Hugo Castéras](https://github.com/hug0-cstrs), [Noah Vernhet](https://github.com/truuue) and [Yoann Rivet](https://github.com/SpStigma).
+## <span id="authors">Authors</span>
 
-## :construction_worker: <span id="authors">Authors</span>
 **Fabien CHAVONET**
-- Github: [@Pandolowitz](https://github.com/Pandolowitz)
+- GitHub: [@fchavonet](https://github.com/fchavonet)

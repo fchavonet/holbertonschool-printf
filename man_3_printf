@@ -1,60 +1,67 @@
 .TH _PRINTF 1 "2023, July" "version 1.0" "User Commands"
 
 .SH NAME
-\fB_printf\fP \- print formatted data to the standard output.
+\fB_printf\fP - print formatted data to the standard output.
 
 .SH SYNOPSIS
-.B int _printf(const char *format, ...);
+.P
+.B _printf(format, ...)
 
 .SH DESCRIPTION
+.P
 The \fB_printf()\fP function prints formatted data to the standard output. It parses the format string and processes each conversion specifier by calling the appropriate function to print the corresponding data type. Additional arguments after \fBformat\fP are retrieved using \fBva_list\fP and \fBva_start\fP to access the variable arguments.
 
 .SH RETURN VALUE
-On success, \fB _printf()\fP returns the number of characters printed (the total length of the string). If format is NULL or only contains a single '%', the function returns -1.
+.P
+On success, \fB_printf()\fP returns the number of characters printed (the total length of the string). If format is NULL or only contains a single '%', the function returns -1.
 
 .SH INCLUDE
-\fB#include <stdarg.h>\fP
-.nf
-\fB#include "main.h"\fP
-.si
+.P
+\fB#include <stdarg.h>
+\fP
+.B
+\fB#include "main.h"
+.P
 
 .SH FORMAT SPECIFIERS
+.P
 The following format specifiers are supported:
 
 .TP
-\fB%c\fR
+\fB%c\fP
 Prints a single character.
 
 .TP
-\fB%s\fR
-Prints a null\-terminated string.
+\fB%s\fP
+Prints a null-terminated string.
 
 .TP
-\fB%%\fR
+\fB%%\fP
 Prints a literal '%' character.
 
 .TP
-\fB%d\fR
+\fB%d\fP
 Prints a decimal number.
 
 .TP
-\fB%i\fR
+\fB%i\fP
 Prints an integer number.
 
 .TP
-\fB%b\fR
+\fB%b\fP
 Prints an integer number converted in binary.
 
 .TP
-\fB%u\fR
+\fB%u\fP
 Prints an unsigned integer number.
 
 .TP
-\fB%o\fR
+\fB%o\fP
 Prints an integer number converted to octal.
 
 .SH EXAMPLES
-The following examples demonstrate the usage of \fB_printf()\fR:
+.P
+The following examples demonstrate the usage of \fB_printf()\fP:
 
 .TP
 .B _printf("%c", 'A');
@@ -85,24 +92,27 @@ Prints "4294967295"
 Prints "The number 42 converted into octal is 52".
 
 .SH NOTES
+.P
 This \fB_printf()\fP function is a simplified version of the standard \fBC\fP library function.
-.br
-It lacks some error handling and does not support all the formating capabilities of the standard \fBprintf()\fP function.
-.br
-It covers the basic usage for the mentionned specifiers.
+.P
+It lacks some error handling and does not support all the formatting capabilities of the standard \fBprintf()\fP function.
+.P
+It covers the basic usage for the mentioned specifiers.
 
 .SH AUTHORS
+.P
 Written by \fBFabien Chavonet\fP and \fBSaadi Khemchane\fP.
 
 .SH REPORTING BUGS
-Please report any bugs or issues to \fIfabien.chavonet@holbertonstudents.com\fR.
+.P
+Please report any bugs or issues to \fIfabien.chavonet@holbertonstudents.com\fP.
 
 .SH COPYRIGHT
-.nf
+.P
 Copyright (C) 2023, Fabien Chavonet.
-This  is  free software: you are free to change and redistribute it.
+This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
-.si
 
 .SH SEE ALSO
+.P
 printf(3)
