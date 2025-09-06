@@ -36,9 +36,9 @@ It aims to handle formatted output to the standard output stream using only low-
     <tr valign="top">
         <td align="center">
             <picture>
-                <source media="(prefers-color-scheme: dark)" srcset="./assets/images/printf_flowshart-dark.webp">
-                <source media="(prefers-color-scheme: light)" srcset="./assets/images/printf_flowshart-light.webp">
-                <img width="100%" src="./assets/images/printf_flowshart.webp" alt="printf Flowchart">
+                <source media="(prefers-color-scheme: dark)" srcset="./assets/images/printf_flowchart-dark.webp">
+                <source media="(prefers-color-scheme: light)" srcset="./assets/images/printf_flowchart-light.webp">
+                <img width="100%" src="./assets/images/printf_flowchart.webp" alt="printf Flowchart">
             </picture>
         </td>
     </tr>
